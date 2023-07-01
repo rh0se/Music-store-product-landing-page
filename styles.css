@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Eczar&family=Fruktur&family=Neuton&family=Work+Sans&display=swap');
+
 * {
     padding: 0;
     margin: 0;
@@ -5,22 +7,30 @@
     list-style: none;
     box-sizing: border-box;
 }
+
+
 .navbar {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    font-family: 'Fruktur', cursive;
     display: flex;
     align-items: center;
     justify-content: space-between;
     padding: 20px;
-    background-color: teal;
-    color: #fff;
+    background-color: white;
+    color: #1a1318;
     height:77px;
+    
 }   
 
 nav a {
-    color: #fff;
+    color:#1a1318;
 }
   
   /* LOGO */
 .logo {
+    
     display:flex;
     justify-items: center;
     align-items:center;
@@ -38,10 +48,12 @@ nav a {
     display: flex;
     gap: 1em;
     font-size: 18px;
+    text-transform: uppercase;
+    font-family: 'Eczar', serif;
 }
   
-.menu li a:hover, a.active {
-    background-color: #4c9e9e;
+.menu li:hover, a.active {
+    background-color: #a3849b;
     border-radius: 5px;
     transition: 0.3s ease;
 } 
@@ -50,7 +62,7 @@ nav a {
     padding: 5px 14px;
 }
   
-.menu li a{
+.menu li {
     padding: 5px 14px;
 }
 /* DROPDOWN MENU */
@@ -59,12 +71,13 @@ nav a {
 }
   
 .dropdown {
-    background-color: rgb(1, 139, 139);
+    background-color: #a3849b;
     padding: 1em 0;
     position: absolute; /*WITH RESPECT TO PARENT*/
     display: none;
     border-radius: 8px;
     top: 35px;
+    text-transform: lowercase;
 }
   
 .dropdown li + li {
@@ -77,8 +90,8 @@ nav a {
     text-align: center;
 }
   
-.dropdown li:hover {
-    background-color: #4c9e9e;
+.dropdown li a:hover {
+    color: #ec9fd8;
 }
   
 .services:hover .dropdown {
@@ -98,9 +111,42 @@ input[type=checkbox] {
     user-select: none;
 }
   
+/* section {
+    width:100%;
+    height: calc(100vh - 77px);
+} */
 .home{
-    background: url(bg1.jpg) no-repeat;
-    width: 100%;
+    margin-top:77px;
+    background: linear-gradient(to bottom, rgba(245, 246, 252, 0.52), rgba(117, 19, 93, 0.73)),
+    url('bg2.jpg') no-repeat;
+    background-size: cover;
+    height: calc(100vh - 77px);
+    text-align: center;
+    color: /* #f8dff1 */  white;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items:center;
+    border-radius: 15px;
+}
+.home div {
+    max-width: 600px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    font-family: 'Work Sans', sans-serif;
+}
+
+h1 {
+    font-size: 4rem;
+    line-height: 1;
+    font-family: 'Eczar', serif;
+}
+h5 {
+    color:black;
+    font-weight: normal;
+    font-size: 1rem;
 }
 
 
@@ -113,7 +159,7 @@ input[type=checkbox] {
     .menu {
        display:none;
        position: absolute;
-       background-color:teal;
+       background-color:#a3849b;
        right: 0;
        left: 0;
        text-align: center;
@@ -121,7 +167,6 @@ input[type=checkbox] {
     }
     .menu li a:hover {
         display: inline-block;
-        background-color:#4c9e9e;
         transition: 0.3s ease;
     }
     .menu li + li {
@@ -144,18 +189,27 @@ input[type=checkbox] {
         left: 50%;
         top: 30px;
         transform: translateX(35%);
+        background-color: #dbb9d3;
         overflow-y: scroll;
     }
     
     .dropdown li a:hover {
-        background-color: #4c9e9e;
+        color: #ec9fd8;
     }
 } 
 
-@media (max-width: 400px) {
+@media (max-width: 425px) {
     .logo img {
         width: 100px;
         height: auto;
+    }
+
+    .home {
+        height: 500px;
+    }
+
+    .dropdown {
+        transform: translateX(25%);
     }
 }
 
