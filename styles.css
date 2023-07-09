@@ -167,14 +167,12 @@ h1 {
 
 }
 
-h2 {
-    align-self: center;
+h2{
+   
     padding: 1rem 2rem;
-    background: rgba(117, 19, 93, 0.65);
-  
 }
 h2, h3 {
-    text-align: center;
+    
     color: #1a1318;
     font-family: 'Eczar', serif;
 }
@@ -191,6 +189,7 @@ h5 {
 
 .about-section h2{
     display: grid;
+    text-align: center;
     grid-template-columns: 1fr;
     background: none;
 }
@@ -236,6 +235,48 @@ h5 {
 
 .about-item-2 h3 {
     font-size: 23px;
+}
+
+.features-section {
+    color: #331236;
+    line-height: 1.5;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.features-flex {
+    display: flex;
+    flex-wrap: wrap;
+    width: 80%;
+}
+
+.features-flex .one {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 20%;
+}
+.features-flex .one img {
+    margin: 0.5rem;
+}
+
+.features-flex .two {
+    width: 80%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 1rem;
+}
+
+.two h2 {
+    font-size: 2em;
+    text-align: left;
+    padding: 0;
+}
+.fa, .fas {
+    color: #1c071f;
 }
 
 
@@ -295,6 +336,13 @@ h5 {
     .about-item, .about-item-2 {
         flex: 100%;
     }
+
+    .two h2 {
+        font-size: 1.5em;
+    }
+    .features-flex {
+        width: 100%
+    }
     
 
 } 
@@ -341,6 +389,22 @@ h5 {
     .about-item-2 p{
         font-size: 16px;
     } 
+
+    .features-flex .one, .features-flex .two {
+        width: 100%;
+    }
+
+    .features-flex .two {
+        align-items: center;
+    }
+
+    .features-flex .two h2 {
+        font-size: 1.3em;
+    }
+
+    .features-flex .two p {
+        text-align: center;
+    }
 }
 
 @media (max-width: 320px) {
@@ -348,6 +412,9 @@ h5 {
     line-height: 1.3;
     font-size: 16px;
     margin: 10px 0;
+    }
+    .features-flex .two h2 {
+        font-size: 16px;
     }
 }
 
