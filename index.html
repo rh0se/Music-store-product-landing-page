@@ -128,7 +128,7 @@
 
     <section class="services-section">
       <h2>Our Services</h2>
-      <div id="our-services">
+      <div id="our-services" class="services-container">
       <article class="first-service grid-item">
         <i class="fa-solid fa-screwdriver-wrench fa-3x"></i>
         <h3>Instrument Repair</h3>
@@ -153,6 +153,73 @@ Flexible scheduling options to accommodate your availability.</p>
         <button class="btn rent">Learn More</button>
     </article>
   </div>
+
+    <fieldset>
+      <h2> Sign Up for Music Lessons</h2>
+          <form class="register-container" action="#">
+            <div class="form-item">
+              <label for="first-name">First Name</label>
+              <input type="text" placeholder="First name" class="music-form" id="first-name">
+            </div>
+            <div class="form-item">
+              <label for="last-name">Last Name</label>
+              <input type="text" placeholder="Last name" class="music-form" id="last-name">
+            </div>
+            <div class="form-item">
+              <label for="birth-date">Date of Birth</label>
+             <input type="date" class="music-form" id="birth-date">
+            </div>
+              <div class="form-item">
+                <label for="phone-number">Phone Number</label>
+                <input type="text" class="music-form" id="phone-number" placeholder="Phone">
+              </div>
+            <div class="form-item">
+              <label for="Email">Email</label>
+              <input type="email" placeholder="johndoe@example.com" class="music-form" id="Email">
+            </div>
+            <div class="form-item">
+              <label for="instrument-choice">Instrument of Interest</label>
+              <select class="music-form" id="instrument-choice">
+                <option>select one</option>
+                <option value="guitar">Guitar</option>
+                <option value="violin">violin</option>
+                <option value="Piano">Piano</option>
+                <option value="Saxophone">Saxophone</option>
+              </select>
+            </div>
+            <div class="form-item">
+              <label for="lesson-formatt">Preferred Lesson Format:</label>
+              <select class="music-form" id="lesson-formatt">
+                <option>select one</option>
+              <option value="in-person">In-Person</option>
+              <option value="online">Online</option>
+            </select>
+            </div>
+            <div class="form-item">
+              <label for="Music-level">Experience Level</label>
+              <select class="music-form" id="Music-level">
+                <option>select one</option>
+                <option>Beginner</option>
+                <option>Intermediate</option>
+                <option>Advanced</option>
+              </select>
+            </div>
+           
+            <ul class="lesson-days">
+              <div>
+              <h4>Pick Days For Lessons</h4>
+            <li class="weekday"><input class="music-form" type="checkbox" id="Monday"><label for="Monday">Monday</label></li>
+            <li class="weekday"><input class="music-form" type="checkbox" id="Tuesday"><label for="Tuesday">Tuesday</label></li>
+            <li class="weekday"><input class="music-form" type="checkbox" id="Wednesday"><label for="Wednesday">Wednesday</label></li>
+            <li class="weekday"><input class="music-form" type="checkbox" id="Thursday"><label for="Thursday">Thursday</label></li>
+            <li class="weekday"><input class="music-form" type="checkbox" id="Friday"><label for="Friday">Friday</label></li>
+            <li class="weekday"><input class="music-form" type="checkbox" id="Saturday"><label for="Saturday">Saturday</label></li>
+            <li class="weekday"><input class="music-form" type="checkbox" id="Sunday"><label for="Sunday">Sunday</label></li>
+          </div>
+          </ul>
+          <button type="submit" value="register" class="lesson-btn">Sign Up Now</button>
+          </form>
+    </fieldset>
     </section>
     
   </main>
