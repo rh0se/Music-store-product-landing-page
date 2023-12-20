@@ -28,8 +28,8 @@
             <!-- DROPDOWN MENU -->
           <ul class="dropdown">
             <li><a href="#our-services" class="dropdown-link">Our services</a></li>
+            <li><a href="#store-tour" class="dropdown-link">Store Tour</a></li>
             <li><a href="#music-lessons" class="dropdown-link">Music Lessons</a></li>
-            <li><a href="/" class="dropdown-link">How it works</a></li>
             <li><a href="#Testimonals" class="dropdown-link">Testimonials</a></li>
           </ul>
         </li>
@@ -56,7 +56,7 @@
       <h2>Who Are WE</h2>
       <div class="about-flex">
       <div class="about-item">
-        <img src="about1.webp" alt="owner,s image" class="about-img">
+        <img src="about1.webp" alt="owner's image" class="about-img">
       </div>
       <div class="about-item-2">
       <p>Melody Haven is a passion-driven music store that has been serving the musical community for over five years. We are passionate about music and dedicated to providing musicians of all levels with the instruments, services, and guidance they need to express themselves through music. Whether you're a beginner or a seasoned professional, we're here to support your musical journey every step of the way.</p>
@@ -126,9 +126,9 @@
       
     </section>
 
-    <section class="services-section">
+    <section class="services-section" id="our-services">
       <h2>Our Services</h2>
-      <div id="our-services" class="services-container">
+      <div class="services-container">
       <article class="first-service grid-item">
         <i class="fa-solid fa-screwdriver-wrench fa-3x"></i>
         <h3>Instrument Repair</h3>
@@ -152,6 +152,11 @@ Flexible scheduling options to accommodate your availability.</p>
         Try out an instrument before committing to a purchase with our flexible rental options.</p>
         <button class="btn rent">Learn More</button>
     </article>
+  </div>
+
+    <div id="store-tour" class="video-wrapper">
+    <iframe id="video" src="https://www.youtube.com/embed/5Q6YT0EIFVg?si=IR4Zl9rfZYS-cXzPautoplay=1&mute=1">
+    </iframe>
   </div>
 
     <fieldset id="music-lessons">
@@ -287,38 +292,106 @@ Flexible scheduling options to accommodate your availability.</p>
             CVN-300 Solidwood Ebony Fitted Violin with D'Addario Prelude Strings
             <span class="price">₦ 136,000</span>
             <img src="cecilio violin.jpg" alt="violin">
-            <!-- <div class="price-caption">
+             <div class="price-caption">
               <button class="price-button">BUY NOW</button>
-            </div> -->
+            </div> 
           </div>
           <div class="pricing-item">
             Yamaha Professional Alto Gold Saxophone
             <span class="price">₦ 159,500</span>
             <img src="saxophone.jpg" alt="Saxophone">
+            <div class="price-caption">
+              <button class="price-button">BUY NOW</button>
+            </div>
           </div>
           <div class="pricing-item">
             African Gangan Talking Drum With Beater
-            <span class="price">₦ 15,000</span> <span class="old-price"> ₦ 30,000</span> <span class="discount">-50%</span>
+            <span class="price">₦ 15,000</span> 
+            <div><span class="old-price"> ₦ 30,000</span> <span class="discount" >-50%</span></div>
             <img src="talking drum.jpg" alt="talking drum">
+            <div class="price-caption">
+              <button class="price-button">BUY NOW</button>
+            </div>
           </div>
-          <div class="pricing-item">
+          <div class="pricing-item fade">
             Fodable Music Stand
             <span class="price">₦ 10,500</span>
-              <span class="old-price"> ₦ 18,000</span> <span class="discount">-42%</span>
+              <div><span class="old-price"> ₦ 18,000</span> <span class="discount">-42%</span></div>
             <img src="music stand.jpg" alt="accessories">
+            <div class="price-caption">
+              <button class="price-button">BUY NOW</button>
+            </div>
           </div>
-          <div class="pricing-item">
+          <div class="pricing-item fade">
             Drum Set Eastar 22 inch for Adults, 5 Piece Full Size Drum Kit Junior Beginner with Pedal Cymbals Stands Stool and Sticks, Mirror Black
             <span class="price">₦ 359,930</span>
             <img src="drumset.jpg" alt="drumset">
+            <div class="price-caption">
+              <button class="price-button">BUY NOW</button>
+            </div>
           </div>
-          <div class="pricing-item">
+          <div class="pricing-item fade">
             Grote Solid Electric Guitar GR Standard T Matte Finish Poplar Body Roasted Maple Neck with Gigbag (Green)
             <span class="price">₦ 200,000</span>
             <img src="green guitar.jpg" alt="guitar">
+            <div class="price-caption">
+              <button class="price-button">BUY NOW</button>
+            </div>
           </div>
         </div>
+        <div class="visit-store">
+          <button>Visit Store</button>
+        </div>
       </div>
+    </section>
+
+
+    <section class="Contact-Us contact-wrapper" id="Contact">
+      <div class="Contact-div Contact1">
+        <div>
+          <article class="address">
+            <i class="fa-solid fa-location-dot fa-3x fa-bounce"></i>
+            <h4>STORE ADDERSS</h4>
+            123 Melody Lane
+            Cityville, State 12345
+          
+          </article>
+          <article class="phone-number">
+            <i class="fa-solid fa-phone fa-3x fa-shake"></i>
+            <h4>PHONE NUMBER</h4>
+             +1 (555) 123-4567 (Toll Free)
+          </article>
+          <article class="fax">
+            <i class="fa-solid fa-fax fa-3x fa-beat-fade"></i>
+            <h4><strong> FAX:</strong></h4>
+             +1 (555) 123-7890
+          </article>
+          <article class="email-address">
+            <i class="fa-solid fa-envelope fa-3x fa-shake"></i>
+            <h4><strong>EMAIL:</strong></h4>
+             <a>info@musicstore.com</a>
+          </article>
+        </div>
+      </div>
+      <div class="Contact-div Contact2">
+        <h1>Contact Us</h1>
+  <p>Do you have any questions or feedback about our music store? We would love to hear from you!</p>
+        <form class="contact-form" action="/contact" method="post">
+          <div class="form-group">
+            <input type="text" id="name" name="name" placeholder="Enter Your Name" required>
+          </div>
+          <div class="form-group">
+            <input type="email" id="email" name="email" placeholder="Enter Your Email" required>
+          </div>
+          <div class="form-group">
+            
+            <textarea id="message" name="message" placeholder="Enter Your Message" rows="5" required></textarea>
+      </div>
+      <div class="submit-wrapper">
+      <button type="submit" class="submit-button">SEND</button>
+    </div>
+  </form>
+</div>
     </section>
   </main>
 </body>
