@@ -27,11 +27,12 @@ Users should be able to:
 - View the optimal layout for the site depending on their device's screen size
 - See hover states for all interactive elements on the page
 
+There are two branches for this project, the freecodecamp branch is my submission to the Freecodecamp Responsive design course.
+
 ### Screenshot
 
-![](./screenshot.jpg)
+![](./screenshot.jpeg)
 
-*
 
 ### Links
 

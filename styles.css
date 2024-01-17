@@ -366,16 +366,16 @@ h5 {
 }
 
 
-.video-wrapper {
-    /* display: grid; */
+/* .video-wrapper {
+    
     display: flex;
     width: 100%;
     justify-content: center;
     
     
-}
+} */
 
-.video-wrapper iframe {
+/* .video-wrapper iframe {
     width: min(600px, 90%);
     display: inline-block;
     height: 90%;
@@ -383,7 +383,7 @@ h5 {
     margin-bottom: 80px;
     border: 0;
     border-radius: 10px;
-}
+} */
 
 fieldset {
     border: none;
@@ -393,6 +393,9 @@ fieldset {
     background-size: cover;
     overflow: hidden;
     border-radius: 100px;
+    h2 {
+        color: #1c071f;
+    }
 }
 
 .register-img-container {
@@ -1114,6 +1117,7 @@ footer {
     fieldset {
         border-radius: 0;
        background-position: top;
+     
     }
     .visit-store {
         display: flex;
@@ -1123,10 +1127,10 @@ footer {
     .visit-store button {
         width: 100%;
     }
-
+/* 
     .video-wrapper, .fade {
         display: none;
-    }
+    } */
 
 
     .form-item {
