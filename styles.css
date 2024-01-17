@@ -135,8 +135,7 @@ nav ul input[type=checkbox] {
   
 .home{
     margin-top:77px;
-    background: /*  linear-gradient(to bottom, rgba(245, 246, 252, 0.52), rgba(117, 19, 93, 0.73)), */
-url('bg2.jpg') no-repeat;
+    background: linear-gradient(rgba(245, 246, 252, 0.52), rgba(117, 19, 93, 0.73)) 0% 0% / cover, url(bg2.jpg) no-repeat;
     background-size: cover;
     height: max(calc(100vh - 77px), 600px);
     text-align: center;
@@ -184,7 +183,7 @@ h5 {
 }
 
 .about-section {
-    background: linear-gradient(to bottom,  #dbb9d3, #ffd6ff/* rgba(117, 19, 93, 0.73), rgba(245, 246, 252, 0.52) */);
+    background: linear-gradient(to bottom, rgba(117, 19, 93, 0.73), rgba(245, 246, 252, 0.52));
 }
 
 .about-section h2{
@@ -282,7 +281,7 @@ h5 {
 }
 
 .services-section {
-    background-color: #a3849b/* rgba(117, 19, 93, 0.65) *//* #c3a2fe */;
+    background-color: rgba(117, 19, 93, 0.65) ;
 }
 
 .services-section h2 {
@@ -392,7 +391,7 @@ fieldset {
     background:linear-gradient(205deg, rgba(245, 246, 252, 0.52), rgba(117, 19, 93, 0.7)), url("register-img.webp") no-repeat;
     background-size: cover;
     overflow: hidden;
-    border-radius: 100px;
+    border-radius: 100px 100px 0 0;
 }
 
 .register-img-container {
@@ -467,8 +466,7 @@ fieldset {
 }
 
 .testimonial-section {
- 
-    background-color: #a3849b;
+  background-color: white;
     
 }
 
@@ -676,7 +674,7 @@ blockquote .right {
 .Contact-Us {
     height: 600px;
     padding: 50px;
-    background: #a3849b/* linear-gradient(to bottom, rgba(245, 246, 252, 0.52), rgba(117, 19, 93, 0.53)) */;
+    background: linear-gradient(to bottom, rgba(245, 246, 252, 0.52), rgba(117, 19, 93, 0.53));
 }
 
 .contact-wrapper {
