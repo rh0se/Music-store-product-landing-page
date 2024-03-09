@@ -48,7 +48,8 @@ There are two branches for this project, the freecodecamp branch is my submissio
 - Flexbox
 - CSS Grid
 - Desktop-first workflow
-- [Styled Components](https://styled-components.com/) - For styles
+- [Canva](https://www.canva.com/) - For logo 
+- [Font-AW](https://fontawesome.com/)- for font styles
 
 
 
